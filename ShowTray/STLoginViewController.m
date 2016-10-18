@@ -45,4 +45,9 @@
 }
 */
 
+- (IBAction)actionFBLogin:(id)sender {
+}
+
+- (IBAction)actionGoogleLogin:(id)sender {
+}
 @end
