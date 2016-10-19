@@ -20,7 +20,6 @@
 		4D122B941DB6C4FB0060F2EB /* OraReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122B921DB6C4FB0060F2EB /* OraReachability.m */; };
 		4D122B9A1DB6C5730060F2EB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122B991DB6C5730060F2EB /* MBProgressHUD.m */; };
 		4D122B9D1DB6C57D0060F2EB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122B9C1DB6C57D0060F2EB /* Reachability.m */; };
-		4D122BA11DB6C60C0060F2EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122BA01DB6C60C0060F2EB /* SWRevealViewController.m */; };
 		4D122BC51DB6C6B20060F2EB /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122BA61DB6C6B20060F2EB /* IQNSArray+Sort.m */; };
 		4D122BC61DB6C6B20060F2EB /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122BA81DB6C6B20060F2EB /* IQUITextFieldView+Additions.m */; };
 		4D122BC71DB6C6B20060F2EB /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122BAA1DB6C6B20060F2EB /* IQUIView+Hierarchy.m */; };
@@ -78,8 +77,14 @@
 		4D122C591DB6C96B0060F2EB /* UIImage+screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122C4F1DB6C96B0060F2EB /* UIImage+screenshot.m */; };
 		4D122C5A1DB6C96B0060F2EB /* UIViewController+CCMPopupAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122C511DB6C96B0060F2EB /* UIViewController+CCMPopupAnimation.m */; };
 		4D122C621DB6D80D0060F2EB /* STSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122C611DB6D80D0060F2EB /* STSignUpViewController.m */; };
+		4D8E60321DB7FC2A00DB3A39 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E60311DB7FC2A00DB3A39 /* SWRevealViewController.m */; };
+		4D8E60401DB8009800DB3A39 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E603B1DB8009800DB3A39 /* MenuTableViewController.m */; };
+		4D8E60411DB8009800DB3A39 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E603D1DB8009800DB3A39 /* ViewController1.m */; };
+		4D8E60421DB8009800DB3A39 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E603F1DB8009800DB3A39 /* ViewController2.m */; };
+		4D8E60441DB800C800DB3A39 /* MainST.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8E60431DB800C800DB3A39 /* MainST.storyboard */; };
 		4DBB9CFF1DB3601800C9D9AA /* STLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB9CFE1DB3601800C9D9AA /* STLoginViewController.m */; };
 		4DBB9D021DB3660600C9D9AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBB9D011DB3660600C9D9AA /* MapKit.framework */; };
+		4DCF2FD11DB7E61B00723E16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DCF2FD01DB7E61B00723E16 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,8 +130,6 @@
 		4D122B991DB6C5730060F2EB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		4D122B9B1DB6C57D0060F2EB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		4D122B9C1DB6C57D0060F2EB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		4D122B9F1DB6C60C0060F2EB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		4D122BA01DB6C60C0060F2EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4D122BA51DB6C6B20060F2EB /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		4D122BA61DB6C6B20060F2EB /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		4D122BA71DB6C6B20060F2EB /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
@@ -246,9 +249,19 @@
 		4D122C5D1DB6CE7D0060F2EB /* ProjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectManager.h; sourceTree = "<group>"; };
 		4D122C601DB6D80D0060F2EB /* STSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSignUpViewController.h; sourceTree = "<group>"; };
 		4D122C611DB6D80D0060F2EB /* STSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSignUpViewController.m; sourceTree = "<group>"; };
+		4D8E60301DB7FC2A00DB3A39 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		4D8E60311DB7FC2A00DB3A39 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		4D8E603A1DB8009800DB3A39 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		4D8E603B1DB8009800DB3A39 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		4D8E603C1DB8009800DB3A39 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		4D8E603D1DB8009800DB3A39 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		4D8E603E1DB8009800DB3A39 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		4D8E603F1DB8009800DB3A39 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		4D8E60431DB800C800DB3A39 /* MainST.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainST.storyboard; sourceTree = "<group>"; };
 		4DBB9CFD1DB3601800C9D9AA /* STLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLoginViewController.h; sourceTree = "<group>"; };
 		4DBB9CFE1DB3601800C9D9AA /* STLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLoginViewController.m; sourceTree = "<group>"; };
 		4DBB9D011DB3660600C9D9AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4DCF2FD01DB7E61B00723E16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECBF1BFC8C3032DCEBAEC2CF /* Pods-ShowTray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowTray.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShowTray/Pods-ShowTray.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +332,8 @@
 				4D122B951DB6C5160060F2EB /* ThirdPartyClasses */,
 				4D122B8E1DB6C4CE0060F2EB /* SingleInstanceController */,
 				4D0882591DB2C3900005E6C2 /* Main.storyboard */,
+				4D8E60431DB800C800DB3A39 /* MainST.storyboard */,
+				4DCF2FD01DB7E61B00723E16 /* GoogleService-Info.plist */,
 				4D08825F1DB2C3900005E6C2 /* Assets.xcassets */,
 				4D0882611DB2C3900005E6C2 /* LaunchScreen.storyboard */,
 				4D0882641DB2C3900005E6C2 /* Info.plist */,
@@ -399,8 +414,8 @@
 		4D122B9E1DB6C5D20060F2EB /* SWRevealClass */ = {
 			isa = PBXGroup;
 			children = (
-				4D122B9F1DB6C60C0060F2EB /* SWRevealViewController.h */,
-				4D122BA01DB6C60C0060F2EB /* SWRevealViewController.m */,
+				4D8E60301DB7FC2A00DB3A39 /* SWRevealViewController.h */,
+				4D8E60311DB7FC2A00DB3A39 /* SWRevealViewController.m */,
 			);
 			name = SWRevealClass;
 			sourceTree = "<group>";
@@ -649,9 +664,23 @@
 			name = SignUp;
 			sourceTree = "<group>";
 		};
+		4D8E60391DB8008A00DB3A39 /* SW */ = {
+			isa = PBXGroup;
+			children = (
+				4D8E603A1DB8009800DB3A39 /* MenuTableViewController.h */,
+				4D8E603B1DB8009800DB3A39 /* MenuTableViewController.m */,
+				4D8E603C1DB8009800DB3A39 /* ViewController1.h */,
+				4D8E603D1DB8009800DB3A39 /* ViewController1.m */,
+				4D8E603E1DB8009800DB3A39 /* ViewController2.h */,
+				4D8E603F1DB8009800DB3A39 /* ViewController2.m */,
+			);
+			name = SW;
+			sourceTree = "<group>";
+		};
 		4DBB9CFC1DB35FF500C9D9AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D8E60391DB8008A00DB3A39 /* SW */,
 				4D122C5F1DB6D7EA0060F2EB /* SignUp */,
 				4D122C5E1DB6D7DB0060F2EB /* Login */,
 			);
@@ -778,7 +807,9 @@
 			files = (
 				4D0882631DB2C3900005E6C2 /* LaunchScreen.storyboard in Resources */,
 				4D0882601DB2C3900005E6C2 /* Assets.xcassets in Resources */,
+				4DCF2FD11DB7E61B00723E16 /* GoogleService-Info.plist in Resources */,
 				4D122BD11DB6C6B20060F2EB /* IQKeyboardManager.bundle in Resources */,
+				4D8E60441DB800C800DB3A39 /* MainST.storyboard in Resources */,
 				4D08825B1DB2C3900005E6C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -862,6 +893,7 @@
 				4D122C3A1DB6C9410060F2EB /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
 				4D122C521DB6C96B0060F2EB /* CCMBorderView.m in Sources */,
 				4D122C1F1DB6C9410060F2EB /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
+				4D8E60401DB8009800DB3A39 /* MenuTableViewController.m in Sources */,
 				4D122BCE1DB6C6B20060F2EB /* IQTitleBarButtonItem.m in Sources */,
 				4D122C361DB6C9410060F2EB /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				4D122BC81DB6C6B20060F2EB /* IQUIViewController+Additions.m in Sources */,
@@ -872,6 +904,7 @@
 				4D122C391DB6C9410060F2EB /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
 				4D122C341DB6C9410060F2EB /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
 				4DBB9CFF1DB3601800C9D9AA /* STLoginViewController.m in Sources */,
+				4D8E60411DB8009800DB3A39 /* ViewController1.m in Sources */,
 				4D122BCC1DB6C6B20060F2EB /* IQTextView.m in Sources */,
 				4D122C251DB6C9410060F2EB /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
 				4D122C321DB6C9410060F2EB /* DGActivityIndicatorNineDotsAnimation.m in Sources */,
@@ -899,18 +932,19 @@
 				4D122BC51DB6C6B20060F2EB /* IQNSArray+Sort.m in Sources */,
 				4D122C1A1DB6C9410060F2EB /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
 				4D122C5A1DB6C96B0060F2EB /* UIViewController+CCMPopupAnimation.m in Sources */,
+				4D8E60421DB8009800DB3A39 /* ViewController2.m in Sources */,
 				4D122C291DB6C9410060F2EB /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
 				4D122C371DB6C9410060F2EB /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
 				4D122C3B1DB6C9410060F2EB /* DGActivityIndicatorView.m in Sources */,
 				4D122C301DB6C9410060F2EB /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
 				4D122BCB1DB6C6B20060F2EB /* IQKeyboardReturnKeyHandler.m in Sources */,
+				4D8E60321DB7FC2A00DB3A39 /* SWRevealViewController.m in Sources */,
 				4D0882521DB2C3900005E6C2 /* main.m in Sources */,
 				4D122C551DB6C96B0060F2EB /* CCMPopupSegue.m in Sources */,
 				4D122BC91DB6C6B20060F2EB /* IQUIWindow+Hierarchy.m in Sources */,
 				4D122C2B1DB6C9410060F2EB /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
 				4D122C1C1DB6C9410060F2EB /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
 				4D122BCF1DB6C6B20060F2EB /* IQToolbar.m in Sources */,
-				4D122BA11DB6C60C0060F2EB /* SWRevealViewController.m in Sources */,
 				4D122B931DB6C4FB0060F2EB /* singletonClass.m in Sources */,
 				4D122C581DB6C96B0060F2EB /* UIImage+ImageEffects.m in Sources */,
 				4D122B941DB6C4FB0060F2EB /* OraReachability.m in Sources */,
@@ -1070,7 +1104,7 @@
 				);
 				INFOPLIST_FILE = ShowTray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sai.ShowTray;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tailor.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1086,7 +1120,7 @@
 				);
 				INFOPLIST_FILE = ShowTray/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sai.ShowTray;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tailor.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

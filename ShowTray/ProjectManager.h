@@ -11,7 +11,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
-#import "SVProgressHUD.h"
+//#import "SVProgressHUD.h"
 
 
 @class BALoginResponse;
@@ -67,13 +67,13 @@ inline static BOOL validateUrlWithString(NSString * url){
 }
 
 
-inline static void showProgressHUD(){
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
-}
-
-inline static void dissmissProgressHUD(){
-    [SVProgressHUD dismiss];
-}
+//inline static void showProgressHUD(){
+//    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+//}
+//
+//inline static void dissmissProgressHUD(){
+//    [SVProgressHUD dismiss];
+//}
 
 
 

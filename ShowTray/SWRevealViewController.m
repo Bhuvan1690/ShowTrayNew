@@ -1,5 +1,3 @@
-
-
 /*
 
  Copyright (c) 2013 Joan Lluch <joan.lluch@sweetwilliamsl.com>
@@ -725,19 +723,7 @@ const int FrontViewPositionNone = 0xff;
     self.view = _contentView;
     
     // Apple also tells us to do this:
-    
-    //iphone-6plus
-    
-    if([UIScreen mainScreen].bounds.size.height == 736.0){
-        NSLog(@"iPhone retina-5.5 inch screen(iPhone 6 plus)");
-        _contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"iphone-6plus.png"]];
-    }
-    else
-    {
-        _contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"iphone-6.png"]];
-
-    }
-    
+    _contentView.backgroundColor = [UIColor blackColor];
     
     // we set the current frontViewPosition to none before seting the
     // desired initial position, this will force proper controller reload
