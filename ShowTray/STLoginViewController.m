@@ -7,12 +7,12 @@
 //
 
 #import "STLoginViewController.h"
+#import "PrefixHeader.pch"
 
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 @import GoogleSignIn;
 
-@interface STLoginViewController ()<GIDSignInUIDelegate>
+@interface STLoginViewController ()<GIDSignInUIDelegate,ProcessDataDelegate>
+@property (weak) UIViewController *popupController;
 
 @end
 
@@ -79,5 +79,30 @@
 - (IBAction)actionGoogleLogin:(id)sender {
     [[GIDSignIn sharedInstance] signIn];
 }
+
+- (IBAction)btnForgotPassword:(id)sender {
+    STForgotPasswordViewController *presentingController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ForgotPassword"];
+    presentingController.processDelegate=self;
+    CCMPopupTransitioning *popup = [CCMPopupTransitioning sharedInstance];
+    if (self.view.bounds.size.height < 420) {
+        popup.destinationBounds = CGRectMake(0, 0, ([UIScreen mainScreen].bounds.size.height-20) * .75, [UIScreen mainScreen].bounds.size.height-20);
+    } else
+    {
+        popup.destinationBounds = CGRectMake(0, 0, 300, 400);
+    }
+    popup.presentedController = presentingController;
+    popup.backgroundViewColor =[UIColor blackColor];
+    popup.backgroundViewAlpha = 0.7;
+    popup.presentingController = self;
+    popup.dynamic = true;
+    self.popupController = presentingController;
+    [self presentViewController:presentingController animated:YES completion:nil];
+}
+
+- (void)processSuccessful:(BOOL)success;
+{
+    NSLog(@"delegate called");
+}
+
 
 @end

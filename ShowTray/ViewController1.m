@@ -12,7 +12,6 @@
 @interface ViewController1 ()
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButton;
-
 @end
 
 @implementation ViewController1

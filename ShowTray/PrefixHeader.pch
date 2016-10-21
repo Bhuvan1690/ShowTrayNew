@@ -11,10 +11,15 @@
 
 #import "AppDelegate.h"
 #import "OraReachability.h"
+#import "SWRevealViewController.h"
 #import "singletonClass.h"
 #import "CCMPopupSegue.h"
+#import "CCMPopupTransitioning.h"
 #import "CCMBorderView.h"
 #import "ProjectManager.h"
+#import "STForgotPasswordViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 
 #define BASEURL @""

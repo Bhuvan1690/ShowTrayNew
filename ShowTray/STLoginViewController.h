@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import "SWRevealViewController.h"
+
 
 @interface STLoginViewController : UIViewController
 {
@@ -23,6 +23,7 @@
 
 - (IBAction)actionFBLogin:(id)sender;
 - (IBAction)actionGoogleLogin:(id)sender;
+- (IBAction)btnForgotPassword:(id)sender;
 
 @end
 
