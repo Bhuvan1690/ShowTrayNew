@@ -16,6 +16,7 @@
 @interface STProfileItemsCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lblHeader;
 @property (weak, nonatomic) IBOutlet UIImageView *imgStatus;
+@property (weak, nonatomic) IBOutlet UIView *viewContainer;
 @end
 
 

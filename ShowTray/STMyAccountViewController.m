@@ -21,8 +21,10 @@
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
-        [_revealButton setTarget: self.revealViewController];
-        [_revealButton setAction: @selector(revealToggle:)];
+       // [_revealButton setTarget: self.revealViewController];
+       // [_revealButton setAction: @selector(revealToggle:)];
+        
+        [_revealButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -36,14 +38,52 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Table view data source
+
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
-*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 7;
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    if (indexPath.row ==0) {
+        static NSString *CellIdentifierHeader = @"ProfileHeaderCell";
+        STProfileHeaderCell *cellHeader = [tableView dequeueReusableCellWithIdentifier: CellIdentifierHeader forIndexPath: indexPath];
+        return cellHeader;
+    
+    }
+    else{
+        static NSString *CellIdentifierItem = @"ProfileItemsCell";
+        STProfileItemsCell *cellItem = [tableView dequeueReusableCellWithIdentifier: CellIdentifierItem forIndexPath: indexPath];
+        cellItem.viewContainer.layer.cornerRadius = 10;
+        return cellItem;
+        
+    }
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if (indexPath.row == 0) {
+        return 201;
+    }
+    else{
+        return 75;
+    }
+}
+
+
 
 @end
