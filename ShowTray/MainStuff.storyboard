@@ -209,9 +209,6 @@
                                                             <state key="normal" title="Edit" image="edit.png">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
-                                                            <connections>
-                                                                <segue destination="Ayd-nw-Lo9" kind="show" id="WGk-gk-CKq"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -338,7 +335,7 @@
         <!--Edit Profile View Controller-->
         <scene sceneID="lkq-cs-03Z">
             <objects>
-                <viewController id="Ayd-nw-Lo9" customClass="STEditProfileViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfile" id="Ayd-nw-Lo9" customClass="STEditProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xhi-vY-QLy"/>
                         <viewControllerLayoutGuide type="bottom" id="Y2Q-UI-5cR"/>
