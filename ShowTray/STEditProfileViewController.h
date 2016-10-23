@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PrefixHeader.pch"
 
-@interface STEditProfileViewController : UIViewController
+@interface STEditProfileViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 - (IBAction)btnSubmit:(id)sender;
 - (IBAction)btnBack:(id)sender;

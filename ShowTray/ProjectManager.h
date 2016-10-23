@@ -16,7 +16,7 @@
 
 @class BALoginResponse;
 
-typedef NS_ENUM(NSInteger, BAUserRole) {
+typedef NS_ENUM(NSInteger, STUserRole) {
     Role_Not_Assigned = 0,
     ST_User = 1,
     BA_Seller = 2,

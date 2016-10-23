@@ -60,6 +60,8 @@
     if (indexPath.row ==0) {
         static NSString *CellIdentifierHeader = @"ProfileHeaderCell";
         STProfileHeaderCell *cellHeader = [tableView dequeueReusableCellWithIdentifier: CellIdentifierHeader forIndexPath: indexPath];
+        
+        [cellHeader.btnEdit addTarget:self action:@selector(btnEditProfile:) forControlEvents:UIControlEventTouchUpInside];
         return cellHeader;
     
     }
@@ -82,6 +84,15 @@
     else{
         return 75;
     }
+}
+
+
+# pragma mark Actions
+
+-(void)btnEditProfile:(UIButton*)sender
+{
+    STEditProfileViewController *controller = (STEditProfileViewController*)[STUFF_STORYBOARD instantiateViewControllerWithIdentifier: @"EditProfile"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 

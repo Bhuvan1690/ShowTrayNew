@@ -38,11 +38,8 @@
 }
 
 - (IBAction)btnFbSignUp:(id)sender {
-        UIStoryboard *secondStoryBoard = [UIStoryboard storyboardWithName:@"MainST" bundle:nil];
-    
-        // Load the initial view controller from the storyboard.
-        // Set this by selecting 'Is Initial View Controller' on the appropriate view controller in the storyboard.
-        SWRevealViewController *theInitialViewController = [secondStoryBoard instantiateInitialViewController];
+
+        SWRevealViewController *theInitialViewController = [STUFF_STORYBOARD instantiateInitialViewController];
         [self.navigationController pushViewController:theInitialViewController animated:YES];
 }
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PrefixHeader.pch"
 
-@interface STMyAccountViewController : UIViewController
+@interface STMyAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIButton *revealButton;
 
 @end

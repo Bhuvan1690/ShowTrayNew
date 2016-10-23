@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view layoutIfNeeded];
     // Do any additional setup after loading the view.
 }
 
@@ -35,6 +36,7 @@
 */
 
 - (IBAction)btnSubmit:(id)sender {
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -52,38 +54,70 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 5;
 }
 
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    static NSString *CellIdentifier;
+    STEditProfileCell *cellHeader;
     
-    if (indexPath.row ==0) {
-        static NSString *CellIdentifierHeader = @"ProfileHeaderCell";
-        STProfileHeaderCell *cellHeader = [tableView dequeueReusableCellWithIdentifier: CellIdentifierHeader forIndexPath: indexPath];
-        return cellHeader;
-        
+    switch (indexPath.row) {
+        case 0:
+            CellIdentifier = @"EditProfileCell1";
+          
+            break;
+        case 1:
+            CellIdentifier = @"EditProfileCell2";
+
+            break;
+        case 2:
+            CellIdentifier = @"EditProfileCell3";
+
+            break;
+        case 3:
+            CellIdentifier = @"EditProfileCell4";
+
+            break;
+        case 4:
+            CellIdentifier = @"EditProfileCell5";
+
+            break;
+            
+        default:
+            break;
     }
-    else{
-        static NSString *CellIdentifierItem = @"ProfileItemsCell";
-        STProfileItemsCell *cellItem = [tableView dequeueReusableCellWithIdentifier: CellIdentifierItem forIndexPath: indexPath];
-        cellItem.viewContainer.layer.cornerRadius = 10;
-        return cellItem;
-        
-    }
+    
+    cellHeader = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
+    return cellHeader;
+
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    if (indexPath.row == 0) {
-        return 201;
-    }
-    else{
-        return 75;
+    switch (indexPath.row) {
+        case 0:
+            return 140;
+            break;
+        case 1:
+            return 70;
+            break;
+        case 2:
+            return 70;
+            break;
+        case 3:
+            return 70;
+            break;
+        case 4:
+            return 161;
+            break;
+            
+        default:
+            return 0;
+            break;
     }
 }
 
