@@ -73,6 +73,7 @@
 		4D122C621DB6D80D0060F2EB /* STSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D122C611DB6D80D0060F2EB /* STSignUpViewController.m */; };
 		4D4A864F1DBA8E7E00C0431E /* STForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A864E1DBA8E7E00C0431E /* STForgotPasswordViewController.m */; };
 		4D4A86521DBA93EF00C0431E /* sample1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A86511DBA93EF00C0431E /* sample1.png */; };
+		4D54995F1DBC935A003CA5AA /* STEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D54995E1DBC935A003CA5AA /* STEditProfileViewController.m */; };
 		4D8E60321DB7FC2A00DB3A39 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E60311DB7FC2A00DB3A39 /* SWRevealViewController.m */; };
 		4D8E60401DB8009800DB3A39 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E603B1DB8009800DB3A39 /* MenuTableViewController.m */; };
 		4D8E60411DB8009800DB3A39 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E603D1DB8009800DB3A39 /* ViewController1.m */; };
@@ -239,6 +240,8 @@
 		4D4A864D1DBA8E7E00C0431E /* STForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STForgotPasswordViewController.h; sourceTree = "<group>"; };
 		4D4A864E1DBA8E7E00C0431E /* STForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STForgotPasswordViewController.m; sourceTree = "<group>"; };
 		4D4A86511DBA93EF00C0431E /* sample1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample1.png; sourceTree = "<group>"; };
+		4D54995D1DBC935A003CA5AA /* STEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEditProfileViewController.h; sourceTree = "<group>"; };
+		4D54995E1DBC935A003CA5AA /* STEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEditProfileViewController.m; sourceTree = "<group>"; };
 		4D8E60301DB7FC2A00DB3A39 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4D8E60311DB7FC2A00DB3A39 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4D8E603A1DB8009800DB3A39 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
@@ -375,8 +378,8 @@
 		4D0980191DBB64F9008A0137 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				4D09801A1DBB654C008A0137 /* STMyAccountViewController.h */,
-				4D09801B1DBB654C008A0137 /* STMyAccountViewController.m */,
+				4D5499611DBC937C003CA5AA /* MyAccount */,
+				4D5499601DBC9360003CA5AA /* EditProfile */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -658,6 +661,24 @@
 			name = dummy;
 			sourceTree = "<group>";
 		};
+		4D5499601DBC9360003CA5AA /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4D54995D1DBC935A003CA5AA /* STEditProfileViewController.h */,
+				4D54995E1DBC935A003CA5AA /* STEditProfileViewController.m */,
+			);
+			name = EditProfile;
+			sourceTree = "<group>";
+		};
+		4D5499611DBC937C003CA5AA /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				4D09801A1DBB654C008A0137 /* STMyAccountViewController.h */,
+				4D09801B1DBB654C008A0137 /* STMyAccountViewController.m */,
+			);
+			name = MyAccount;
+			sourceTree = "<group>";
+		};
 		4D8E60391DB8008A00DB3A39 /* SWTemp */ = {
 			isa = PBXGroup;
 			children = (
@@ -936,6 +957,7 @@
 				4D122BCB1DB6C6B20060F2EB /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4D8E60321DB7FC2A00DB3A39 /* SWRevealViewController.m in Sources */,
 				4D0882521DB2C3900005E6C2 /* main.m in Sources */,
+				4D54995F1DBC935A003CA5AA /* STEditProfileViewController.m in Sources */,
 				4D122BC91DB6C6B20060F2EB /* IQUIWindow+Hierarchy.m in Sources */,
 				4D122C2B1DB6C9410060F2EB /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
 				4D122C1C1DB6C9410060F2EB /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,

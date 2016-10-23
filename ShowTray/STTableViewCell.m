@@ -31,3 +31,7 @@
 @implementation STProfileItemsCell : UITableViewCell
 
 @end
+
+@implementation STEditProfileCell : UITableViewCell
+
+@end
